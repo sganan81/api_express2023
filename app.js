@@ -12,6 +12,10 @@ app.get('/home', function (req, res) {
     res.json({text: 'Estamos en casa'});
 });
 
+app.get('/render', function (req, res) {
+  res.json({text: 'Estamos deployando nuestra app en render'});
+});
+
 app.listen(port, () =>{    
     console.log(`App escuchando en el puerto ${port}`);
 });
